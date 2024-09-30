@@ -1,0 +1,79 @@
+---
+title: "nandre21 R Projects"
+format: 
+  html: 
+    css: styles.css
+---
+
+# Welcome to my Projects
+
+A portfolio highlighting my ongoing R programming projects. Dive in and explore the insights and analyses I've created! Click and explore!
+
+<div id="timeline-embed" style="width: 100%; height: 600px;"></div>
+
+<!-- Include Timeline.js -->
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+<script type="text/javascript">
+var timeline_json = {
+    "title": {
+        "text": {
+            "headline": "Project Timeline",
+            "text": "Click on each milestone to explore projects, PDF descriptions, and GitHub links."
+        }
+    },
+    "events": [
+        {
+            "start_date": {
+                "year": "2023"
+            },
+            "text": {
+                "headline": "Project 1: IDA World Bank Projects Map",
+                "text": "<p>This interactive map displays the geographical distribution and details of projects funded by the International Development Association (IDA) under the World Bank. It allows users to explore project details and impact globally, providing a comprehensive view of development efforts worldwide.<br><a href='World_Bank_Map_Project__30_09_24_.pdf' target='_blank'>Download PDF</a> | <a href='https://github.com/nandre21/World-Bank-Aid-Projects-Map' target='_blank'>GitHub Repo</a></p>"
+            },
+            "media": {
+                "url": "images/Loadedmap.png",
+                "caption": "Interactive Map Example"
+            }
+        },
+        {
+            "start_date": {
+                "year": "2024"
+            },
+            "text": {
+                "headline": "Project 2: Retail Investor Sentiment Tracker - Equity Analysis Tool",
+                "text": "<p>This Shiny app analyzes Retail Investor sentiment for Equities based on discussions in the r/wallstreetbets subreddit. The app features real-time stock prices and sentiment analysis, daily sentiment scores, and trending equities.<br><a href='Equity_Analysis_Project__30_09_24_.pdf' target='_blank'>Download PDF</a> | <a href='https://github.com/nandre21/Wallstreetbets-Sentiment-Analysis?tab=readme-ov-file' target='_blank'>GitHub Repo</a></p>"
+            },
+            "media": {
+                "url": "images/Loadedinterface.png",
+                "caption": "Retail Investor Sentiment Tracker Example"
+            }
+        },
+        {
+            "start_date": {
+                "year": "2024"
+            },
+            "text": {
+                "headline": "Project 3: Identifying Political Shifts",
+                "text": "<p>This Shiny app analyzes Reddit comments to extract sentiment and profanity scores based on user discussions in specific subreddits. The application leverages the RedditExtractoR package for data fetching and performs sentiment analysis using the sentimentr package.<br><a href='Politicization_through_Reddit_Comments.pdf' target='_blank'>Download PDF</a> | <a href='https://github.com/nandre21/Political-Sentiment.git' target='_blank'>GitHub Repo</a></p>"
+            },
+            "media": {
+                "url": "images/politicalsentiment.png",
+                "caption": "Political Sentiment Analysis Example"
+            }
+        }
+        // Add more events (projects) as needed
+    ]
+};
+
+window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+</script>
+
+<!-- Toggle Theme Button -->
+<button id="theme-toggle" style="margin-top: 20px;">Toggle Theme</button>
+<script>
+    document.getElementById('theme-toggle').onclick = function() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
